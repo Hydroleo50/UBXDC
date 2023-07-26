@@ -28,6 +28,15 @@ java binxdcon
 ```
 4. Follow the on screen prompts.
 
+
+# Roadmap
+- Finish the intended functionality (multiple encode/decode, direct encode/decode)
+- Make the code legible(Optional)
+- Optimize(Optional)
+- Fix the Prompt formatting
+- "Sanitize" Input and make Output look better
+- Do something about that multiple line thing
+
 # FAQ
 
 - Why are you doing this?
@@ -41,4 +50,13 @@ I was forced to learn java, so i am writing this fun little project as practice.
 I'll do that later. Maybe. Devs are known to be lazy;
 
 I am no exception.
+
+- Do you accept Criticism?
+
+No
+
+- Do you accept constructive Criticism?
+
+Yes
+
 
