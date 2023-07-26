@@ -5,6 +5,16 @@ Do you type your messages with lots of 'xd's in them?
 Do you want to mess with your friends and family, and encode binary messages into 'xd'nary messages,
 so you can send the most inefficient and easy to decode encoded messages?
 
+Example:
+```
+Input: 1001 0110 1000 1010 1011
+Output: xddx dxxd xddd xdxd xdxx
+```
+Or the other way around:
+```
+Input: xxxx dddx xddx ddxx xxdx
+Output: 1111 0001 1001 0011 1101
+```
 If yes, then this tool is right for you!
 
 It will (hopefully) be frequently updated to implement all the desired Functionalities, like:
