@@ -62,22 +62,22 @@ java binxdcon
 
 - Why are you doing this?
 
-I was forced to learn java, so i am writing this fun little project as practice.
+> I was forced to learn java, so i am writing this fun little project as practice.
 
-(I am aware tools already exist which you can do this with. That is not the point.)
+> (I am aware tools already exist which you can do this with. That is not the point.)
 
 - Dude, you should use C for this. More cool and efficient and stuff.
 
-I'll do that later. Maybe. Devs are known to be lazy;
+> I'll do that later. Maybe. Devs are known to be lazy;
 
-I am no exception.
+> I am no exception.
 
 - Do you accept Criticism?
 
-No
+> No
 
 - Do you accept constructive Criticism?
 
-Yes
+> Yes
 
 
