@@ -21,6 +21,7 @@ Its a command line tool for now. I might implement a GUI version in the future.
 javac binxdcon.java
 ```
 to compile the tool.
+
 3. Then, to run the tool, use:
 ```
 java binxdcon
