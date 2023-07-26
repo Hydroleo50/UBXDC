@@ -36,7 +36,7 @@ I was forced to learn java, so i am writing this fun little project as practice.
 
 (I am aware tools already exist which you can do this with. That is not the point.)
 
-- Dude, you should use c for this. More cool and efficient and stuff.
+- Dude, you should use C for this. More cool and efficient and stuff.
 
 I'll do that later. Maybe. Devs are known to be lazy;
 
