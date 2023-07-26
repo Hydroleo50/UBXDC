@@ -35,6 +35,7 @@ Currently, all conversions work. (not perfectly)
 
 # Installation
 Its a command line tool for now. I might implement a GUI version in the future.
+All you need is the binxdcon.java file, so first download that.
 1. Make sure you have Java installed (If not, install it)
 2. In the same folder as the binxdcon.java file, run:
 ```
