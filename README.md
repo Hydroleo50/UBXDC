@@ -5,6 +5,8 @@ Do you type your messages with lots of 'xd's in them?
 Do you want to mess with your friends and family, and encode binary messages into 'xd'nary messages,
 so you can send the most inefficient and easy to decode encoded messages?
 
+If yes, then this tool is right for you!
+
 Example:
 ```
 Input: 1001 0110 1000 1010 1011
@@ -15,13 +17,21 @@ Or the other way around:
 Input: xxxx dddx xddx ddxx xxdx
 Output: 1111 0001 1001 0011 1101
 ```
-If yes, then this tool is right for you!
+There is also direct encoding/decoding:
+```
+Input: Hello there
+Output: dxddxddd dxxddxdx dxxdxxdd dxxdxxdd dxxdxxxx ddxddddd dxxxdxdd dxxdxddd dxxddxdx dxxxddxd dxxddxdx
+```
+And back:
+```
+Input: dxdddxxx dxxddxdx dxxdxxxd dxxddxdx dxxxddxd dxxddddx dxxdxxdd ddxddddd dxddxdxx dxxddxdx dxxdxxxd dxxdxxxx dxxdddxd dxxdxddx
+Output: General Kenobi
+```
 
 It will (hopefully) be frequently updated to implement all the desired Functionalities, like:
-- directly decoding/encoding 'xd'nary messages
 - encoding/decoding multiple messages (right now it terminates after one operation)
 
-Currently, xd to binary and binary to xd work.
+Currently, all conversions work. (not perfectly)
 
 # Installation
 Its a command line tool for now. I might implement a GUI version in the future.
@@ -40,11 +50,11 @@ java binxdcon
 
 
 # Roadmap
-- Finish the intended functionality (multiple encode/decode, direct encode/decode)
+- Finish the intended functionality (multiple encode/decode)
 - Make the code legible(Optional)
 - Optimize(Optional)
 - Fix the Prompt formatting
-- "Sanitize" Input and make Output look better
+- "Sanitize" Input and make Output look better <- Halfway done
 - Do something about that multiple line thing
 
 # FAQ
