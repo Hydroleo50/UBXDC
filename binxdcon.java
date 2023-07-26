@@ -18,9 +18,11 @@ public class binxdcon {
                 System.out.print("Type your String of 'xd's now, all into one line:");
                 System.out.println(xdtoBinary());
             }
-            case 2 ->
-                //System.out.print("Type your binary now:");
-                    System.out.println("NOT IMPLEMENTED YET!!");
+            case 2 -> {
+                System.out.println("(I am not done implementing multiple lines yet, so)");
+                System.out.print("Type your binary now, in one line:");
+                System.out.println(binarytoXd());
+            }
             case 3 ->
                 //System.out.print("Type your String now:");
                     System.out.println("NOT IMPLEMENTED YET!!");
@@ -38,6 +40,16 @@ public class binxdcon {
         s = s.toLowerCase();
         s = s.replace('x', '1');
         s = s.replace('d', '0');
+        return s;
+    }
+
+    public static String binarytoXd()
+    {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        s = s.toLowerCase();
+        s = s.replace('1', 'x');
+        s = s.replace('0', 'd');
         return s;
     }
 }
