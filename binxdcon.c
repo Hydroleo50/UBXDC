@@ -115,7 +115,7 @@ char* convertXDToString()
     char* s = xdToBinary();
     const int len = (int)strlen(s);
 
-    char* newStr = malloc(len / 8);
+    char* newStr = malloc(len/8);
     int i = 0;
     int x = 0;
     while (i < len)

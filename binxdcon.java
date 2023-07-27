@@ -3,8 +3,8 @@ import java.util.stream.Collectors;
 
 public class binxdcon {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("XD TO BINARY CONVERTER");
         System.out.println("To convert from xd to binary, type 1");
@@ -47,11 +47,10 @@ public class binxdcon {
             } catch (InputMismatchException e) {
                 System.out.println("Usage: Just type the number 1, 2, 3 or 4 depending on what you need to do.");
             }
-
     }
 
-    public static String xdtoBinary()
-    {
+    public static String xdtoBinary() {
+
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         s = s.toLowerCase();
@@ -60,8 +59,8 @@ public class binxdcon {
         return s;
     }
 
-    public static String binarytoXd()
-    {
+    public static String binarytoXd() {
+
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         s = s.toLowerCase();
@@ -71,27 +70,27 @@ public class binxdcon {
     }
 
     public static String convertStringToXD() {
+
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         StringBuilder result = new StringBuilder();
         char[] chars = input.toCharArray();
+
         for (char aChar : chars) {
-            result.append(
-                    String.format("%8s", Integer.toBinaryString(aChar))   // char -> int, auto-cast
-                            .replaceAll(" ", "0")                         // zero pads
-            );
+            result.append(String.format("%8s", Integer.toBinaryString(aChar)).replaceAll(" ", "0"));
         }
+
         String s = result.toString();
         s = prettyXDnary(s, 8, " ");
         s = s.replace('1', 'x');
         s = s.replace('0', 'd');
         return s;
-
     }
 
-    public static String convertXDtoString()
-    {
-        try{Scanner scanner = new Scanner(System.in);
+    public static String convertXDtoString() {
+
+        try {
+        Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         input = input.replace('x', '1');
         input = input.replace('d', '0');
@@ -104,8 +103,9 @@ public class binxdcon {
             sb.append(c);
         }
             return sb.toString();
-        } catch(NumberFormatException e)
-        {System.out.println("Error, check if characters other than 'x' or 'd' are present, and remove them.");
+        }
+        catch(NumberFormatException e) {
+            System.out.println("Error, check if characters other than 'x' or 'd' are present, and remove them.");
             System.out.println("Also, make sure the Input format is correct.");
             System.out.println("Input format: xddxdxxd xddxddxd (...)");}
         return "Process terminated";
@@ -118,7 +118,6 @@ public class binxdcon {
             result.add(binary.substring(index, Math.min(index + blockSize, binary.length())));
             index += blockSize;
         }
-
         return result.stream().collect(Collectors.joining(separator));
     }
 }
