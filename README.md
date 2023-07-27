@@ -35,9 +35,11 @@ Currently, all conversions work. (not perfectly)
 
 # Installation
 Its a command line tool for now. I might implement a GUI version in the future.
+
+For the Java version:
 All you need is the binxdcon.java file, so first download that.
 1. Make sure you have Java installed (If not, install it)
-2. In the same folder as the binxdcon.java file, run:
+2. In the same folder as the binxdcon.java file, open a terminal or cmd prompt and run:
 ```
 javac binxdcon.java
 ```
@@ -48,6 +50,17 @@ to compile the tool.
 java binxdcon
 ```
 4. Follow the on screen prompts.
+
+For the C version:
+1. Download binxdcon.c
+2. Compile it using your favorite compiler, for example gcc
+```
+gcc -o binxdcon binxdcon.c
+```
+3. Run it, and follow the on screen prompts
+```
+./binxdcon
+```
 
 
 # Roadmap
@@ -68,9 +81,11 @@ java binxdcon
 
 - Dude, you should use C for this. More cool and efficient and stuff.
 
-> I'll do that later. Maybe. Devs are known to be lazy;
+> ~~I'll do that later. Maybe. Devs are known to be lazy;~~
 
-> I am no exception.
+> ~~I am no exception.~~
+
+> A C version of this was created by @marv7000.
 
 - Do you accept Criticism?
 
