@@ -64,7 +64,7 @@ gcc -o binxdcon binxdcon.c
 
 
 # Roadmap
-- Finish the intended functionality (multiple encode/decode)
+- Finish the intended functionality (multiple encode/decode, more than one line)
 - Make the code legible(Optional)
 - Optimize(Optional)
 - Fix the Prompt formatting
