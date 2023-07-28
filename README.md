@@ -9,13 +9,13 @@ If yes, then this tool is right for you!
 
 Example:
 ```
-Input: 1001 0110 1000 1010 1011
-Output: xddx dxxd xddd xdxd xdxx
+Input: 10010110 10001010 10111111
+Output: xddxdxxd xdddxdxd xdxxxxxx
 ```
 Or the other way around:
 ```
-Input: xxxx dddx xddx ddxx xxdx
-Output: 1111 0001 1001 0011 1101
+Input: xxxxdddx xddxddxx xxdxdddd
+Output: 11110001 10010011 11010000
 ```
 There is also direct encoding/decoding:
 ```
