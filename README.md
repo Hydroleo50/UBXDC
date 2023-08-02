@@ -30,6 +30,7 @@ Output: General Kenobi
 
 It will (hopefully) be frequently updated to implement all the desired Functionalities, like:
 - encoding/decoding multiple messages (right now it terminates after one operation)
+- More than one line of input at a time
 
 Currently, all conversions work. (not perfectly)
 
