@@ -7,8 +7,12 @@
 char* getLine()
 {
     char* s = malloc(BUFSIZE);
+    //NO EXCEPTION/ERROR CORRECTION????
+    //TODO: FEHLERBEHANDLUNG
     scanf("%s", NULL);
     fgets(s, BUFSIZE, stdin);
+    //NO EXCEPTION/ERROR CORRECTION????
+    //TODO: FEHLERBEHANDLUNG
     return s;
 }
 
@@ -69,6 +73,8 @@ char binaryToChar(const char* ch)
 char* charToBinary(char ch)
 {
     char* s = malloc(9);
+    //NO EXCEPTION/ERROR CORRECTION????
+    //TODO: FEHLERBEHANDLUNG
     s[8] = 0;
     for (int i = 0; i < 8; i++)
     {
@@ -91,6 +97,8 @@ char* convertStringToXD()
     const int len = (int)strlen(s);
     const int newLen = len * 8 + len;
     char* newStr = calloc(1, newLen + 1);
+    //NO EXCEPTION/ERROR CORRECTION????
+    //TODO: FEHLERBEHANDLUNG
     newStr[newLen] = 0;
 
     int i = 0;
@@ -98,6 +106,7 @@ char* convertStringToXD()
     while (j < newLen)
     {
         char* str = binaryStringToXd(charToBinary(s[i]));
+        //THIS AIN'T JAVA
         for (int x = 0; x < 8; x++)
         {
             newStr[j] = str[x];
@@ -114,8 +123,10 @@ char* convertXDToString()
 {
     char* s = xdToBinary();
     const int len = (int)strlen(s);
-
+    //how to die
     char* newStr = malloc(len/8);
+    //NO EXCEPTION/ERROR CORRECTION????
+    //TODO: FEHLERBEHANDLUNG
     int i = 0;
     int x = 0;
     while (i < len)
@@ -144,7 +155,7 @@ int main(int argc, char** argv)
 
     printf("(I am not done implementing multiple lines yet, so)\n");
     printf("Type your content now, all into one line:\n");
-    switch (d) 
+    switch (d) //switch this d haha
     {
         case 1: 
         {
@@ -171,6 +182,7 @@ int main(int argc, char** argv)
             printf("Usage: Just type the number 1, 2, 3 or 4 depending on what you need to do.\n");
             break;
         }
+        //Mfs teaching C be like: Avoid printf because this makes your code hackable dx use puts instead
     }
 
     return 0;
@@ -178,3 +190,4 @@ int main(int argc, char** argv)
 // THERE ARE NO COMMENTS ; THE CODE IS THE COMMENT! !!!! !!
 // that's a joke. there are no comments because the finished tasks are trivial
 // there will be comments for more complex stuff, probably
+// Comments screaming about error correction exist because the way i was taught C, if you don't do it a cosmic ray will bit flip in your RAM and all memory allocation will fail
