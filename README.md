@@ -79,6 +79,7 @@ gcc -o binxdcon binxdcon.c
 > I was forced to learn java, so i am writing this fun little project as practice.
 
 > (I am aware tools already exist which you can do this with. That is not the point.)
+> In hindsight, why would i ever use Java for this. I guess the design is very human. very easy to understand.
 
 - Dude, you should use C for this. More cool and efficient and stuff.
 
